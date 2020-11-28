@@ -1,0 +1,84 @@
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.cover {
+  height: 100vh;
+  display: flex;
+}
+
+.cover > img {
+  max-width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 10px;
+}
+
+.card {
+  background-color: #444;
+  margin: 50px;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card > h1 {
+  font-size: 1.5em;
+}
+
+.card > p {
+  font-size: 0.5em;
+}
+
+.card > .text {
+  padding: 0 20px 20px;
+}
+
+button {
+  cursor: pointer;
+  background: grey;
+  color: #fff;
+  font-size: 1rem;
+  border: 0;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e0d27b;
+}
+
+footer {
+  background-color: #30336b;
+  text-align: center;
+  padding: 3px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar ul{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
